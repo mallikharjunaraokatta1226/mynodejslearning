@@ -1,6 +1,6 @@
 const http = require('http');
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-    console.log("Message Received!");
-});
+const app = express();
+const server = http.createServer(app);
 server.listen("3000");
